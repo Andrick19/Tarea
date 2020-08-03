@@ -1,5 +1,15 @@
-package CuentaDeBanco;
-import CuentaDeBanco.CuentaB;
-public class CuentaCorriente extends CuentaB {
 
+public class CuentaAhorro extends CuentaBancaria{
+    
+    @Override
+    public double deposito(double deposito, double monto){
+        double aumento;
+        if(monto < 9000){
+            aumento = monto * 0.02;
+            deposito += (monto + aumento);
+        }
+       
+        return deposito;
+    }
+    
 }
