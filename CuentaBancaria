@@ -1,6 +1,5 @@
 package cuenta;
 
-
 public class CuentaBancaria {
      protected String propietario;
     protected double saldo;
