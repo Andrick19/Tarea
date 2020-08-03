@@ -1,0 +1,18 @@
+package cuenta;
+public class CuentaCorriente extends CuentaBancaria{
+    
+
+    public double deposito(double deposito, double monto){
+        double aumento;
+        if(monto <= 9000){
+            aumento = monto *0.01;
+            deposito += (monto + aumento);
+        }
+        
+        return deposito;
+    }
+
+    boolean deposito(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
