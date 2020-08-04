@@ -1,7 +1,5 @@
-package cuenta;
-
 public class CuentaBancaria {
-     protected String propietario;
+    protected String propietario;
     protected double saldo;
     //protected double monto;
 
@@ -23,5 +21,6 @@ public class CuentaBancaria {
         saldo-=monto;
         return saldo;
     }
+    
     
 }
